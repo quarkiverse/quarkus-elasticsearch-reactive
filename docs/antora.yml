@@ -1,0 +1,5 @@
+name: quarkus-elasticsearch-reactive
+title: Quarkus - Elasticsearch Reactive
+version: dev
+nav:
+  - modules/ROOT/nav.adoc

@@ -1,0 +1,9 @@
+name: Elasticsearch Reactive
+description: Elasticsearch Reactive client based on Vert.x and Mutiny
+metadata:
+  keywords:
+    - elasticsearch
+    - reactive
+  categories:
+    - "data"
+  status: "experimental"
