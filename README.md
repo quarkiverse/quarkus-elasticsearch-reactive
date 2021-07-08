@@ -1,17 +1,25 @@
-# Quarkus - Elasticsearch Reactive
+# Quarkiverse - Elasticsearch Reactive Client
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-## Welcome to Quarkiverse!
+This Quarkus extension provides a Vert.x based Elasticsearch client based on [Mutiny](https://smallrye.io/smallrye-mutiny).
 
-Congratulations and thank you for creating a new Quarkus extension project in Quarkiverse!
+For more information about the reactive client, goes to the [Reactiverse Elasticsearch Client](https://github.com/reactiverse/elasticsearch-client).
 
-Feel free to replace this content with the proper description of your new project and necessary instructions how to use and contribute to it.
+To use the extension, add the following dependency to your pom.xml:
 
-You can find the basic info, Quarkiverse policies and conventions in [the Quarkiverse wiki](https://github.com/quarkiverse/quarkiverse/wiki).
+```xml
+    <dependency>
+      <groupId>io.quarkiverse.quarkus-elasticsearch-reactive</groupId>
+      <artifactId>quarkus-elasticsearch-reactive</artifactId>
+      <version>${elasticsearch-reactive.version}</version>
+    </dependency>
+```
 
-In case you are creating a Quarkus extension project for the first time, please follow [Building My First Extension](https://quarkus.io/guides/building-my-first-extension) guide.
+Then configure it with the same configuration options as ones used by the Quarkus Elasticsearch client. 
+You can read the [Configuring Elasticsearch](https://quarkus.io/guides/elasticsearch#configuring-elasticsearch) section of the Quarkus Elasticsearch guide for more information. 
 
 Other useful articles related to Quarkus extension development can be found under the [Writing Extensions](https://quarkus.io/guides/#writing-extensions) guide category on the [Quarkus.io](http://quarkus.io) website.
 
@@ -24,6 +32,7 @@ The documentation for this extension should be maintained as part of this reposi
 The layout should follow the [Antora's Standard File and Directory Set](https://docs.antora.org/antora/2.3/standard-directories/).
 
 Once the docs are ready to be published, please open a PR including this repository in the [Quarkiverse Docs Antora playbook](https://github.com/quarkiverse/quarkiverse-docs/blob/main/antora-playbook.yml#L7). See an example [here](https://github.com/quarkiverse/quarkiverse-docs/pull/1).
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
