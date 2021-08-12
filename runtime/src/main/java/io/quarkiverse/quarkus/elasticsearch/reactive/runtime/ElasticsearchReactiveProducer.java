@@ -5,6 +5,7 @@ import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
+import io.quarkus.elasticsearch.restclient.lowlevel.runtime.RestClientBuilderHelper;
 import org.elasticsearch.client.RestClientBuilder;
 
 import io.quarkus.elasticsearch.restclient.lowlevel.runtime.ElasticsearchConfig;
