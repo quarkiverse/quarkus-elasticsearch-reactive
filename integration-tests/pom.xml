@@ -14,6 +14,10 @@
       <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
     </dependency>
     <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-health</artifactId>
+    </dependency>
+    <dependency>
       <groupId>io.quarkiverse.quarkus-elasticsearch-reactive</groupId>
       <artifactId>quarkus-elasticsearch-reactive</artifactId>
       <version>${project.version}</version>

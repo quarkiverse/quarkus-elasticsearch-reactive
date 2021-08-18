@@ -11,8 +11,7 @@ public class ElasticsearchContainerTestResource implements QuarkusTestResourceLi
 
     static ElasticsearchContainer elasticsearchContainer = new ElasticsearchContainer(
             DockerImageName.parse("docker.elastic.co/elasticsearch/elasticsearch-oss")
-                    // Aiven managed version
-                    .withTag("7.9.3"));
+                    .withTag("7.10.2"));
 
     @Override
     public Map<String, String> start() {
