@@ -4,7 +4,7 @@
   <parent>
     <groupId>io.quarkiverse.quarkus-elasticsearch-reactive</groupId>
     <artifactId>quarkus-elasticsearch-reactive-parent</artifactId>
-    <version>0.2.0</version>
+    <version>0.3.0-SNAPSHOT</version>
   </parent>
   <artifactId>quarkus-elasticsearch-reactive-integration-tests</artifactId>
   <name>Quarkus - Elasticsearch Reactive - Integration Tests</name>
