@@ -18,6 +18,10 @@
       <artifactId>quarkus-vertx-deployment</artifactId>
     </dependency>
     <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-health-spi</artifactId>
+    </dependency>
+    <dependency>
       <groupId>io.quarkiverse.quarkus-elasticsearch-reactive</groupId>
       <artifactId>quarkus-elasticsearch-reactive</artifactId>
       <version>${project.version}</version>

@@ -2,6 +2,8 @@ package io.quarkiverse.quarkus.elasticsearch.reactive.it;
 
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.hamcrest.Matchers.is;
 
 import java.util.List;
 
@@ -55,6 +57,14 @@ public class FruitResourceTest {
         Assertions.assertEquals("1", results.get(0).id);
         Assertions.assertEquals("Apple", results.get(0).name);
         Assertions.assertEquals("Green", results.get(0).color);
+    }
+
+    @Test
+    public void testHealth() {
+        get("/q/health/ready").then()
+                .body("status", is("UP"),
+                        "checks.status", containsInAnyOrder("UP"),
+                        "checks.name", containsInAnyOrder("Elasticsearch cluster health check"));
     }
 
 }

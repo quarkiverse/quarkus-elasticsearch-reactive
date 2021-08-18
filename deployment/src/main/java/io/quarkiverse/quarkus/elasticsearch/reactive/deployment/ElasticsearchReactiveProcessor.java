@@ -10,6 +10,7 @@ import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.builditem.FeatureBuildItem;
 import io.quarkus.elasticsearch.restclient.lowlevel.ElasticsearchClientConfig;
+import io.quarkus.smallrye.health.deployment.spi.HealthBuildItem;
 
 class ElasticsearchReactiveProcessor {
 
@@ -35,5 +36,12 @@ class ElasticsearchReactiveProcessor {
 
         beanDefiningAnnotations
                 .produce(new BeanDefiningAnnotationBuildItem(ELASTICSEARCH_CLIENT_CONFIG, DotNames.APPLICATION_SCOPED, false));
+    }
+
+    @BuildStep
+    HealthBuildItem addHealthCheck(ElasticsearchReactiveBuildTimeConfig buildTimeConfig) {
+        return new HealthBuildItem(
+                "io.quarkiverse.quarkus.elasticsearch.reactive.runtime.health.ElasticsearchReactiveHealthCheck",
+                buildTimeConfig.healthEnabled);
     }
 }
