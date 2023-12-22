@@ -4,6 +4,12 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+> [!WARNING]
+> This extension is no more maintained, the latest release is 1.1.0 based on Quarkus 3.2.x.
+> Maintenance stops because it depends on the Quarkus Elasticsearch High Level Client extension removed on Quarkus 3.3.
+
+
+
 This Quarkus extension provides a Vert.x based Elasticsearch client based on [Mutiny](https://smallrye.io/smallrye-mutiny).
 
 For more information about the reactive client, goes to the [Reactiverse Elasticsearch Client](https://github.com/reactiverse/elasticsearch-client).
